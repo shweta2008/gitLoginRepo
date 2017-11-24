@@ -1,0 +1,164 @@
+body {
+    font-family: 'Open Sans', sans-serif;  
+    background-color: #F5F5F5;    
+}
+.login-holder {
+	margin-top: 15%;
+}
+.login-holder .form-control {
+	box-shadow: none;
+	border-left: 0 none;
+}
+.input-group-addon { 
+	background-color: transparent;
+	color: #999999;
+}
+a { color: #03A9F4; }
+
+
+
+/* Hidding the radiobuttons & checkboxes */
+input[type="radio"], input[type="checkbox"] {
+    display: none;
+}
+/* Hidding the "check" status of inputs */
+input[type="radio"] + label .fa-circle,
+input[type="checkbox"] + label .fa-check  {
+display: none;
+content: "\f096";
+}
+/* Styling the "check" status */
+input[type="radio"]:checked + label .fa-circle,
+input[type="checkbox"]:checked + label .fa-check {
+display: block;
+/*color: #999999;*/
+content: "\f046";
+}
+/* Styling checkboxes */
+input[type="checkbox"]:checked + label .fa-check {
+position: relative;
+left: .125em;
+bottom: .125em;
+}
+/* Styling radiobuttons */
+input[type="radio"]:checked + label .fa-circle-o {
+display: none;
+}
+
+.circle, .circle-transparent {
+	border: 1px solid #90A4AE;
+  	border-radius: 80px;
+  	height: 80px;
+  	width:80px;
+    
+    line-height: 80px;
+    margin: auto;
+    background-color: #fff;
+
+}
+.circle-transparent {
+	    width: 100px;
+	    border-color: transparent;
+}
+.circle .fa-user, .circle .fa-lock{
+	color: #90A4AE;
+    font-size: 30px;
+}
+
+.line-as-background {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #90A4AE ;
+}
+.line-as-background:before {
+	border-top: 1px solid #90A4AE;
+	content:"";
+	position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+	top: 50%; left: 0; right: 0; bottom: 0;
+	z-index: -1;
+}
+.line-as-background span {
+	background: #fff;
+    padding: 0px 15px;
+}
+.btn-default {
+	background-color: #FCFCFC;
+}
+.social-icon-holder {
+  position: absolute;
+  left:auto;
+  right: 30%;
+}
+.icon {
+	position:relative;
+	text-align:center;
+	width:0px;
+	height:0px;
+	padding:20px;
+	border-top-right-radius: 	20px;
+	border-top-left-radius: 	20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 	20px; 
+	-moz-border-radius: 		20px 20px 20px 20px;
+	-webkit-border-radius: 		20px 20px 20px 20px;
+	-khtml-border-radius: 		20px 20px 20px 20px; 	
+	color:#FFFFFF;
+}
+.icon i {
+	font-size:20px;
+	position:absolute;
+	left:9px;
+	top:10px;
+}
+.icon.social {
+	float:left;
+	margin:0 5px 0 0;
+	cursor:pointer;
+
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 	
+}
+.icon.social.fb:hover {	
+	background:#4355B6 ;
+	color: #ffffff;
+}
+
+.icon.social.tw:hover {	
+	background:#01BCD4 ;
+	color: #ffffff;
+}
+
+.icon.social.in:hover {	
+	background:#ff0000 ;
+	color: #ffffff;
+}
+.icon.social.fb i {
+	left:13px;
+	top:10px;
+	
+}
+.icon.social.tw i {
+	left:11px;
+}
+.icon.social.in i {
+	left:11px;
+}
+.icon.social.fb {	
+	border:1px #4355B6 solid;
+	color:#4355B6;
+}
+.icon.social.tw  {
+	border:1px #01BCD4 solid;
+	color:#01BCD4;
+}
+.icon.social.in  {	
+	border:1px red solid;
+	color:red;
+}
+.btn {
+	font-weight: 600;
+	text-transform: uppercase;
+}
