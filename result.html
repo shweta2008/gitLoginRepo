@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Result</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.circliful.css">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Great+Vibes|Marck+Script|Oleo+Script|Pacifico|Sacramento|Satisfy" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row login-holder">
+            <div class="col-lg-4 col-lg-offset-4">
+                <div class="panel panel-default">
+                    <div class="panel-body text-center">
+                        <h1 class="congrats-text">Congratulations !!!</h1>
+                        <div class="clearfix">&nbsp;</div>
+                        <h4>You completed Quiz in 1m 6s</h4>
+                        <h3>You score 12/20</h3>
+                        <div id="test-circle"></div>
+                        <div class="legend-line text-left">
+                            <div class="col-lg-4 pull-left">
+                                <span class="color-box" style="background: #5cb85c"></span>Correct, 70%
+                            </div>
+                            <div class="col-lg-4 pull-left">
+                                <span class="color-box" style="background: #d9534f"></span>Incorrect, 30%
+                            </div>
+                        </div>
+                        <div class="clearfix">&nbsp;</div>
+                        <div class="clearfix">&nbsp;</div>
+                        <button type="submit" class="btn btn-info">Review Answer</button>
+                        <div class="clearfix">&nbsp;</div>
+                        <p class=" text-muted">If you like this app please rate it.
+                            <br>Thanks for your support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/lib/jquery.circliful.js"></script>
+<script>
+$(document).ready(function() { // 6,32 5,38 2,34
+    $("#test-circle").circliful({
+        animation: 1,
+        animationStep: 5,
+        foregroundBorderWidth: 15,
+        backgroundBorderWidth: 15,
+        percent: 40,
+        textStyle: 'font-size: 12px;',
+        textColor: '#46b8da',
+        foregroundColor: '#5cb85c',
+        backgroundColor: "#d9534f",
+        fontColor: '#5cb85c'
+    });
+});
+</script>
+
+</html>

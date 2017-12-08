@@ -62,8 +62,8 @@
 }
 
 .nav ul ul ul {
-	top: 5px;
-	left: 95%;
+	top: 0px;
+	left: 101%;
 	z-index: 902;
 }
 
@@ -76,8 +76,10 @@
 }
 
 .nav ul ul li.nav-left > ul {
-	left: auto;
-	right: 95%;
+	/*left: auto;
+	right: 95%;*/
+	left: 101%;
+	
 }
 
 .nav-no-js .nav li:hover > ul {

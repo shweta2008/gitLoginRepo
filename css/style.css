@@ -162,3 +162,14 @@ display: none;
 	font-weight: 600;
 	text-transform: uppercase;
 }
+.congrats-text {
+ 	font-family: 'Oleo Script', cursive;
+    color: #5bc0de;
+    border-bottom: 2px #5bc0de dashed;
+    padding-bottom: 10px;
+ }
+ .page-header  {
+ 	background-color: #5bc0de;
+ 	color: #ffffff;
+ 	text-align: center;
+ }
